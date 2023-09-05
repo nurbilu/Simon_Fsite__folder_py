@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Image on Button Click</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css') }}">
+    <script>
+        function toggleImage() {
+            var image = document.getElementById("myImage");
+            var buttonText = document.getElementById("toggleButton");
+            
+            if (image.style.display === "none" || image.style.display === "") {
+                image.style.display = "block";
+                buttonText.innerHTML = "Hide Image";
+            } else {
+                image.style.display = "none";
+                buttonText.innerHTML = "Show Image";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Say Hello to ...!</h1>
+    
+    <button id="toggleButton" onclick="toggleImage()">Show Image</button>
+    
+    <img id="myImage" src="https://hips.hearstapps.com/hmg-prod/images/lonely-pug-royalty-free-image-1652974264.jpg?crop=0.447xw:1.00xh;0.355xw,0&resize=980:*" 
+    width="400" height="450" style="display:none;">
+    <p>
+        Panther the P - U - G !
+    </p>
+</body>
+</html>

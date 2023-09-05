@@ -1,0 +1,45 @@
+/* Reset some default browser styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center text within the body */
+body {
+    text-align: center;
+}
+
+/* Center images horizontally and vertically */
+img {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block; /* Change to block to remove flex properties */
+}
+
+/* Style for tables */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #dddddd; /* Add a border around the table */
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Alternate row background color for better readability */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for table headers */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
