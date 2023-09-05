@@ -2,7 +2,7 @@ import numpy as np
 from scipy.io import wavfile
 
 # Define the parameters
-sample_rate = 44100  # Samples per second (Hz) need to be in 10k and above? 
+sample_rate = 44100  # Samples per second (Hz) 
 duration = 0.3 # Duration of the sound in seconds
 frequency = 220.0  # Frequency of the sine wave in Hz (A4 note)
 
